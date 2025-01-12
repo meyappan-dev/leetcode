@@ -10,15 +10,11 @@ class Solution:
             l1, r1 = 0, k-1
             l2, r2 = k, len(nums)-1
             while (l1 < r1):
-                temp = nums[l1]
-                nums[l1] = nums[r1]
-                nums[r1] = temp
+                nums[l1], nums[r1] = nums[r1], nums[l1]
                 l1+=1
                 r1-=1
             print(nums)
             while (l2 < r2):
-                temp = nums[l2]
-                nums[l2] = nums[r2]
-                nums[r2] = temp
+                nums[l2], nums[r2] = nums[r2], nums[l2]
                 l2+=1
                 r2-=1
