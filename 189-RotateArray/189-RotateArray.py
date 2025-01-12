@@ -3,19 +3,6 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        # i=0
-        # x = 0
-        # count = 0
-        # while(count<len(nums)):
-        #     if(x!=i):
-        #     temp = nums[i]
-        #     print(k+x)
-        #     nums[i] = nums[k+x]
-        #     nums[k+x] = temp
-        #     x = k + x
-        #     count += 1
-        #     if k+x >= len(nums):
-        #         x = x - len(nums)
         if(len(nums) > 1):
             nums.reverse()
             if(k > len(nums)):
