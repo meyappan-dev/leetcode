@@ -13,7 +13,6 @@ class Solution:
                 nums[l1], nums[r1] = nums[r1], nums[l1]
                 l1+=1
                 r1-=1
-            print(nums)
             while (l2 < r2):
                 nums[l2], nums[r2] = nums[r2], nums[l2]
                 l2+=1
