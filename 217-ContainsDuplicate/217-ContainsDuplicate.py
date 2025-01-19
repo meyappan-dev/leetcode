@@ -1,7 +1,7 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         # nums.sort()
-        res = {}
+        res = set()
 
         for i in range(len(nums)):
             # j=i+1
@@ -10,7 +10,7 @@ class Solution:
             if nums[i] in res:
                 return True
             else:
-                res[nums[i]] = True
+                res.add(nums[i])
                 # print(res)
             # else:
             #     j+=1
