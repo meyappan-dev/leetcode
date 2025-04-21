@@ -1,4 +1,4 @@
-# Last updated: 4/4/2025, 1:21:17 AM
+# Last updated: 4/21/2025, 6:21:40 PM
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
         res=[[1]]
